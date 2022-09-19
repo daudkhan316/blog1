@@ -1,0 +1,165 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+* {
+    box-sizing: border-box;
+}
+
+
+/* navbar styling*/
+
+.navbar {
+    background-color: rgb(237, 133, 255) !important;
+}
+
+.navbar .navbar-nav a {
+    color: black;
+    font-weight: bold;
+}
+
+.navbar .navbar-nav a:hover {
+    background-color: rgb(233, 164, 245)
+}
+
+.header-section {
+    background-color: rgb(237, 133, 255);
+}
+
+
+
+/* profile picture styling*/
+.profile-picture {
+    border-radius: 50%;
+    /* margin: 100px; */
+    background-color: rgb(191, 196, 201);
+}
+
+/* description section styling*/
+
+/* plus blog section anchor styling*/
+
+.description-section a,
+.blog-section a {
+    color: black;
+    font-weight: bold;
+}
+
+/* blog section*/
+
+.blog-section {
+    background-color: rgb(237, 133, 255);
+    margin-top: 100px;
+}
+
+.blog-picture {
+    width: 300px;
+    height: 120px;
+}
+
+.blog-section a
+{
+    text-decoration: none;   
+}
+
+.blog-section a:hover
+{
+    text-decoration: underline;
+}
+
+/* subscription section*/
+
+.subscription-section {
+    margin: 100px 0px;
+}
+
+.subscription-section .input-group {
+    width: 50%;
+}
+
+/* footer */
+
+footer {
+    background-color: rgb(237, 133, 255);
+    
+}
+
+
+
+footer ul {
+    list-style: none;
+}
+
+footer ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+footer ul li img {
+    width: 50px;
+    height: 50px;
+
+}
+
+/* for blogs */
+
+.blogs a
+{
+    text-decoration: none;
+    color: black;
+}
+
+.blogs a:hover
+{
+    text-decoration: underline;
+}
+
+
+// Responsive media queries for profile picture
+
+@media only screen and (max-width: 576px){
+    
+    .profile-picture
+    {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media only screen and (min-width: 576px){
+    
+    .profile-picture
+    {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@media only screen and (max-width: 768px){
+
+    .subscription-section .input-group #subscribe-email-field, .subscription-section .input-group #subscribe-button
+    {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 768px){
+    
+    .profile-picture
+    {
+        width: 250px;
+        height: 250px;
+        margin-bottom: 10px;
+    }
+
+}
+
+@media only screen and (min-width: 992px){
+    
+    .profile-picture
+    {
+        width: 300px;
+        height: 300px;
+    }
+
+}
